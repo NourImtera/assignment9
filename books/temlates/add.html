@@ -1,0 +1,7 @@
+{% extended 'books.html'%}
+{%block 'body'%}
+<a href="{% url 'homepage'%}">Home Page</a>
+<form action="addBooks" method="POST">
+<input type="text" name="name"/><button type="submit">Save Books</button>
+</form>
+{%endblock%}

@@ -1,0 +1,15 @@
+{% extended 'books.html'%}
+{%block 'body'%}
+<a href="{% url 'addBooks'%}">ADD BOOK</a>
+ <ul>
+     {%for i in books%}
+     <li>
+         {% i %}
+
+
+     </li>
+     {%endfor%}
+
+
+ </ul>
+{%endblock%}
